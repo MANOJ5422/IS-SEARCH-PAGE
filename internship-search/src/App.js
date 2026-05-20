@@ -190,7 +190,12 @@ export default function App() {
                     {item.start_date || "Immediately"}
                   </span>
 
-                  <button style={styles.button}>
+                  <button style={styles.button}   onClick={() =>
+    window.open(
+      `https://internshala.com/${item.url}`,
+      "_blank"
+    )
+  }>
                     View Details
                   </button>
                 </div>
